@@ -1,18 +1,15 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 export default function Home() {
   return (
-    <div>Hello world</div>
-  );
+    <>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </>
+  )
 }
